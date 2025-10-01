@@ -2,7 +2,8 @@
 import './App.css'
 
 // Importar o componente o componente filho
-import FunctionalComponent from './components/FunctionalComponent'
+import FunctionalComponent from './components/FunctionalComponent';
+import ClassComponent from './components/ClassComponent';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <h1>React + Vite</h1>
       {/* utilizando o componente importado no JSX */}
       <FunctionalComponent />
+      <ClassComponent />
     </>
   )
 }
