@@ -14,7 +14,7 @@ function App() {
       {/* utilizando o componente importado no JSX */}
       <FunctionalComponent />
       <ClassComponent />
-      <PropsExample nome="Milton" idade="39" />
+      <PropsExample nome="Milton" idade={39} />
     </>
   )
 }
