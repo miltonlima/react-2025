@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>Hello World React</h1>
+      <h1>React + Vite</h1>
       {/* utilizando o componente importado no JSX */}
       <FunctionalComponent />
     </>
