@@ -1,89 +1,172 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(to bottom, #24446c, #1b2c45);
+  /* Fundo azul escuro */
   color: #1a1a1a;
+  min-height: 100vh;
 }
 
-.app-container {
+/* O novo CONTAINER PRINCIPAL */
+.page-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* Alinha ao topo, conforme o printscreen */
+  align-items: flex-start;
   min-height: 100vh;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
-.card {
+/* O novo CARD (área de conteúdo branca) */
+.document-container {
   background: #fff;
-  max-width: 700px;
+  max-width: 780px;
   width: 100%;
-  border-radius: 10px;
-  padding: 40px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 20px auto;
-  width: 100px;
-}
-
-h2 {
-  text-align: center;
-  color: #1b2c45;
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-h3 {
-  color: #24446c;
-  font-size: 15px;
-  margin-top: 25px;
-  margin-bottom: 8px;
-}
-
-p, li {
-  font-size: 14px;
+  border-radius: 8px;
+  padding: 40px 60px;
+  /* Aumentei o padding lateral para ficar mais parecido com o print */
+  /* Removido o box-shadow para tirar a "borda preta" */
+  box-shadow: none;
   line-height: 1.6;
 }
 
-ul {
+/* CABEÇALHO */
+.header-content {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sesc-logo-image {
+  /* Substitua esta URL pela real ou use um placeholder */
+  width: 120px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.main-title {
+  font-size: 18px;
+  font-weight: normal;
+  color: #666;
+  margin: 0;
+}
+
+/* TÍTULOS DE SEÇÃO */
+.section-title {
+  font-size: 16px;
+  color: #005691;
+  /* Azul SESC */
+  font-weight: bold;
+  border-bottom: 2px solid #005691;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* SEÇÕES DE CONTEÚDO */
+.document-section {
+  margin-bottom: 30px;
+}
+
+.document-section p,
+.document-section li {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* LISTAS DE PARTICIPAÇÃO E CRITÉRIOS */
+.participation-list,
+.income-criteria-list {
   padding-left: 20px;
+  margin: 10px 0;
 }
 
-a {
-  color: #24446c;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.checkbox-container {
-  margin-top: 30px;
-  font-size: 14px;
-}
-
-.btn-prosseguir {
-  display: block;
-  width: 100%;
-  background-color: #24446c;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 6px;
-  font-size: 14px;
+.income-note {
+  font-weight: bold;
   margin-top: 15px;
+}
+
+/* ÁREA DE DOCUMENTOS NECESSÁRIOS */
+.doc-item-container {
+  padding-left: 10px;
+}
+
+.doc-item {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.note-disclaimer {
+  font-size: 12px;
+  margin-top: 15px;
+  font-style: italic;
+  color: #666;
+}
+
+/* FOOTER */
+.document-footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 30px;
+}
+
+.saiba-mais {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.link-style {
+  color: #005691;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.agreement-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.agreement-checkbox {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.agreement-text {
+  font-size: 12px;
+  color: #666;
+}
+
+/* ... código omitido ... */
+
+/* BOTÃO 'PROSSEGUIR' - Ajustado para o visual cinza */
+.button-prosseguir {
+  /* Cor cinza claro conforme o print */
+  background-color: #e0e0e0;
+  /* Adicionado gradiente para profundidade */
+  background-image: linear-gradient(to top, #d0d0d0, #f0f0f0);
+  color: #333;
+  /* Texto preto/cinza escuro */
+  border: 1px solid #a0a0a0;
+  /* Borda sutil */
+  padding: 10px 50px;
+  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: opacity 0.3s;
+  /* Centraliza o botão e define uma largura máxima para não ocupar 100% */
+  display: inline-block;
+  max-width: 250px;
+  width: 100%;
 }
 
-.btn-prosseguir:disabled {
-  background-color: #a0a0a0;
-  cursor: not-allowed;
-}
-
-.btn-prosseguir:not(:disabled):hover {
-  background-color: #1b2c45;
+.button-prosseguir:hover {
+  background-color: #d0d0d0;
+  opacity: 0.9;
 }
