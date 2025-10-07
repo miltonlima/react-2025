@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import logoSesc from './assets/sesc-logo.png';
 
 function App() {
   const [checked, setChecked] = useState(false);
@@ -7,7 +8,8 @@ function App() {
   return (
     <div className="app-container">
       <div className="card">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Logo_SESC.svg" alt="Sesc Logo" className="logo" />
+        <img src={logoSesc} alt="Sesc Logo" className="logo" />
+
         <h2>Programa de Comprometimento e Gratuidade (PCG)</h2>
 
         <section>
