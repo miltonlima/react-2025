@@ -28,7 +28,7 @@ const MainPage = () => {
                         Comércio (CNC). Seu objetivo é ampliar o acesso a ações educativas gratuitas para pessoas
                         de baixa renda, prioritariamente trabalhadores do comércio de bens, serviços e turismo, seus
                         dependentes e estudantes da rede pública de educação básica, todos com renda familiar de
-                        até três salários-mínimos nacionais.
+                        até três salários-mínimos nacionais. 
                     </p>
                     <p>
                         O programa destina recursos para atividades de educação básica, continuada e outras ações
